@@ -24,6 +24,21 @@
             transition: transform 2s ease;
         }
 
+        li.li-check::before {
+            content: "\2713";
+            color: green;
+            margin-right: 8px;
+        }
+        li.li-check-circle {
+            background-image: url('./assets/icons/check-circled.svg');
+            background-repeat: no-repeat;
+            background-position: center left;
+            padding-left: 40px;
+            margin-bottom: 10px;
+        }
+        .accordion-button {
+            box-shadow: none!important;
+        }
     </style>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#FFD700">
         <symbol id="yellowStar" viewBox="0 0 24 24">
@@ -241,8 +256,8 @@
                 <img src="./assets/images/people.jpg" width="70%" alt="people" />
             </div>
         </section>
-        <section class="bg-light row p-5 mb-4 container-fluid">
-            <div class="col-md-4">
+        <section class="bg-light row mb-4 container-fluid">
+            <div class="col-md-5">
                 <img src="./assets/icons/shopify.com.svg" width="70" alt="shopify" />
                 <div class="col m-0 mt-4">
                     <div id="stars">
@@ -300,12 +315,12 @@
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="./assets/images/testimonies.png" width="100%" height="80%" />
             </div>
         </section>
         <section class="row mb-4 container-fluid">
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <b class="text-primary fw-bold sm">Support</b>
                 <header class="intro h3 mb-4">
                     FAQs
@@ -315,11 +330,11 @@
                     <a href="#" class="text-muted">Please chat to our friendly team</a>
                 </p>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
                 <div class="accordion" id="accordionPanelsStayOpen">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    <div class="accordion-item bg-light mb-3 rounded-1">
+                        <h2 class="accordion-header underline-0 " id="panelsStayOpen-headingOne">
+                            <button class="accordion-button fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
                                 How many participants can join a ClearLink video conference?
@@ -333,9 +348,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
                                 Can I use ClearLink on multiple devices?
@@ -348,9 +363,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
                                 Is ClearLink compatible with other video conferencing platforms?
@@ -359,12 +374,52 @@
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse mb-4"
                             aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                Yes, ClearLink can be used with most other video conferencing platforms
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light mb-3 rounded-1">
+                        <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                How does ClearLink ensure the security of my video conferences?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse mb-4"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                Security is built on top...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light mb-3 rounded-1">
+                        <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFive">
+                                Do I need to download any software to use ClearLink?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse mb-4"
+                            aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body">
+                                No external software needed
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light mb-3 rounded-1">
+                        <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingSix">
+                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseSix">
+                                What kind of customer support does ClearLink provide?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse mb-4"
+                            aria-labelledby="panelsStayOpen-headingSix">
+                            <div class="accordion-body">
+                                customer support phone email and best
                             </div>
                         </div>
                     </div>
@@ -373,18 +428,18 @@
         </section>
 
         <section class="row mb-4 mt-4 container-fluid">
-            <div class="col-md-5 mb-4">
-                <h3>Ready to clear the path to perfect communication?</h3>
-                <ul class="mb-3">
-                    <li>30 days free trial</li>
-                    <li>Cancel at any time</li>
-                    <li>Access to all features</li>
-                    <li>Personalized onboarding</li>
+            <div class="col-md-6 mb-4">
+                <h3 class="mb-4">Ready to clear the path to perfect communication?</h3>
+                <ul class="mb-3 list-unstyled">
+                    <li class="li-check-circle">30 days free trial</li>
+                    <li class="li-check-circle">Cancel at any time</li>
+                    <li class="li-check-circle">Access to all features</li>
+                    <li class="li-check-circle">Personalized onboarding</li>
                 </ul>
-                <a href="#" class="btn btn-outline-secondary rounded-1">Talk to sales</a>
-                <a href="#" class="btn btn-primary rounded-1">Start your free trial</a>
+                <a href="#" class="btn btn-outline-secondary rounded-1 mb-3">Talk to sales</a>
+                <a href="#" class="btn btn-primary rounded-1 mb-3">Start your free trial</a>
             </div>
-            <div class="col mb-4">
+            <div class="col-md-6 mb-4">
                 <img src="./assets/images/team-stand-up.jpg" width="100%" />
             </div>
         </section>
@@ -404,44 +459,44 @@
             <div class="col">
                 <ul class="list-unstyled">
                     <p>Product</p>
-                    <li class="text-muted">Overview</li>
-                    <li class="text-muted">Features</li>
-                    <li class="text-muted">Solution</li>
-                    <li class="text-muted">Tutorials</li>
-                    <li class="text-muted">Pricing</li>
+                    <li><a href="#" class="text-decoration-none text-muted"> Overview</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Features</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Solution</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Tutorials</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Pricing</a></li>
                 </ul>
             </div>
             
             <div class="col">
                 <ul class="list-unstyled">
                     <p>Company</p>
-                    <li class="text-muted">About us</li>
-                    <li class="text-muted">Careers</li>
-                    <li class="text-muted">Press</li>
-                    <li class="text-muted">News</li>
-                    <li class="text-muted">Contact</li>
+                    <li><a href="#" class="text-decoration-none text-muted">About us</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Press</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">News</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Contact</a></li>
                 </ul>
             </div>
             
             <div class="col">
                 <ul class="list-unstyled">
                     <p>Resources</p>
-                    <li class="text-muted">Blog</li>
-                    <li class="text-muted">Events</li>
-                    <li class="text-muted">Help center</li>
-                    <li class="text-muted">Tutorials</li>
-                    <li class="text-muted">Support</li>
+                    <li><a href="#" class="text-decoration-none text-muted">Blog</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Events</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Help center</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Tutorials</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Support</a></li>
                 </ul>
             </div>
             
             <div class="col">
                 <ul class="list-unstyled">
                     <p>Legal</p>
-                    <li class="text-muted">Terms</li>
-                    <li class="text-muted">Privacy</li>
-                    <li class="text-muted">Cookies</li>
-                    <li class="text-muted">Licenses</li>
-                    <li class="text-muted">Contact</li>
+                    <li><a href="#" class="text-decoration-none text-muted">Terms</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Privacy</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Cookies</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Licenses</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Contact</a></li>
                 </ul>
             </div>
             
@@ -461,19 +516,24 @@
 
         </section>
     </main>
-    <footer class="pt-3 mt-4 text-muted bg-light d-flex align-items-center">
-        <span class="me-auto">© 2023 ClearLink. All rights reserved.</span>
-        <div class="text-end">
-            <img src="./assets/icons/linkedin.svg" width="20" height="20" />
-            <img src="./assets/icons/twitter.svg" width="20" height="20" />
-            <img src="./assets/icons/facebook.svg" width="20" height="20" />
-            <img src="./assets/icons/instagram.svg" width="20" height="20" />
-            <img src="./assets/icons/github.svg" width="20" height="20" />
-            <img src="./assets/icons/youtube.svg" width="20" height="20" />
+    <footer class="pt-3 m-4 text-muted bg-light">
+        <div class="row container">
+            <div class="col-md-auto">
+                <p class="me-md-auto text-center text-md-start">© 2023 ClearLink. All rights reserved.</p>
+            </div>
+            <div class="col-md-auto ms-md-auto">
+                <div class="text-center text-md-end">
+                    <img src="./assets/icons/linkedin.svg" width="20" height="20" />
+                    <img src="./assets/icons/twitter.svg" width="20" height="20" />
+                    <img src="./assets/icons/facebook.svg" width="20" height="20" />
+                    <img src="./assets/icons/instagram.svg" width="20" height="20" />
+                    <img src="./assets/icons/github.svg" width="20" height="20" />
+                    <img src="./assets/icons/youtube.svg" width="20" height="20" />
+                </div>
+            </div>
         </div>
-    </footer>    
-    <!-- Optional JavaScript; choose one of the two! -->
-
+    </footer>
+      
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

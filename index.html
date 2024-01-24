@@ -100,9 +100,9 @@
         </nav>
     </div>
   
-    <main class="container py-4">
+    <main class="py-4">
 
-        <section class="mb-4 row pt-4">
+        <section class="container-fluid mb-4 row pt-4">
             <!-- <div class="row align-items-md-stretch"> -->
 
             <div class="col-md-6">
@@ -119,11 +119,7 @@
                         assistant</a>
                     <div class="row mt-4" id="reviews">
                         <div class="col">
-                            <img src="./assets/images/review-1.jpg" width="100%" />
-                            <img src="./assets/images/review-2.jpg" width="100%" />
-                            <img src="./assets/images/review-3.jpg" width="100%" />
-                            <img src="./assets/images/review-4.jpg" width="100%" />
-                            <img src="./assets/images/review-5.jpg" width="100%" />
+                            <img src="./assets/images/avatar-review-group.png" width="80" />
                         </div>
                         <div class="col m-0">
                             <div id="stars">
@@ -154,7 +150,6 @@
                 <img src="./assets/images/header-1.jpg" width="100%" alt="video-call-preview" />
 
             </div>
-
         </section>
         <section class="container-fluid p-5">
             <header class="intro text-muted text-center mb-4">
@@ -164,7 +159,6 @@
             <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
         
-                    <!-- Large Screens (display four items at a time) -->
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col">
@@ -182,13 +176,7 @@
                         </div>
                     </div>
         
-                    <div class="carousel-item">
-                        <div class="row">
-                            <!-- Add additional items for large screens as needed -->
-                        </div>
-                    </div>
         
-                    <!-- Small Screens (display two items at a time) -->
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col">
@@ -199,45 +187,10 @@
                             </div>
                         </div>
                     </div>
-        
-                    <div class="carousel-item">
-                        <div class="row">
-                            <!-- Add additional items for small screens as needed -->
-                        </div>
-                    </div>
-        
                 </div>
             </div>
         </section>
-        
-        
-        <section class="container-fluid p-5">
-            <header class="intro text-muted text-center mb-4">
-                Join 1,500+ companies already video conferencing the ClearLink way
-            </header>
-            <div class="row">
-                <div class="col">
-                    <img src="./assets/icons/shopify.com.svg" width="73" />
-                </div>
-                <div class="col">
-                    <img src="./assets/icons/coinbase.svg" width="73" />
-                </div>
-                <div class="col">
-                    <img src="./assets/icons/dropbox.svg" width="73" />
-                </div>
-                <div class="col">
-                    <img src="./assets/icons/intercom.svg" width="73" />
-                </div>
-                <div class="col">
-                    <img src="./assets/icons/marvel.svg" width="73" />
-                </div>
-                <div class="col">
-                    <img src="./assets/icons/automattic.svg" width="73" />
-                </div>
-
-            </div>
-        </section>
-        <section id="features" class="row mb-4">
+        <section id="features" class="container-fluid row mb-4">
             <div class="row">
                 <div class=" col-md-6">
                     <p class="intro text-primary text-start mb-2">
@@ -285,10 +238,10 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="./assets/images/people.jpg" width="100%" alt="people" />
+                <img src="./assets/images/people.jpg" width="70%" alt="people" />
             </div>
         </section>
-        <section class="bg-light row p-5 mb-4">
+        <section class="bg-light row p-5 mb-4 container-fluid">
             <div class="col-md-4">
                 <img src="./assets/icons/shopify.com.svg" width="70" alt="shopify" />
                 <div class="col m-0 mt-4">
@@ -313,30 +266,37 @@
                 <div class="mt-4">
                     <p class="h5">“ClearLink has upgraded our remote meetings. High-quality video, screen
                         sharing, and top-notch security make it essential for our team.”</p>
-                    <div class="row">
-                        <img src="./assets/images/shopify-review.jpg" width="100%" />
-                        <div class="col">
-
-                            <p class="fw-bold">Sarah Thompson</p>
-                            <p class="text-muted">Project manager, Shopify</p>
-                        </div>
-                        <div class="col">
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn" type="button">
-                                    <svg width="18" height="18" fill="#FFD700">
-
-                                    <use xlink:href="#blueLeftArrow" />
-                                    </svg>
-                                </button>
-                                <button class="btn" type="button">
-                                    <svg width="18" height="18" fill="#FFD700">
-                                        <use xlink:href="#blueRightArrow" />
-
-                                    </svg>
-                                </button>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img src="./assets/images/sarah-shopify.svg" width="32" />
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-bold mb-1">Sarah Thompson</p>
+                                        <p class="text-muted">Project manager, Shopify</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <button class="btn" type="button">
+                                                <svg width="18" height="18" fill="#FFD700">
+                                                    <use xlink:href="#blueLeftArrow" />
+                                                </svg>
+                                            </button>
+                                            <button class="btn" type="button">
+                                                <svg width="18" height="18" fill="#FFD700">
+                                                    <use xlink:href="#blueRightArrow" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        
+                        
                 </div>
             </div>
 
@@ -344,7 +304,7 @@
                 <img src="./assets/images/testimonies.png" width="100%" height="80%" />
             </div>
         </section>
-        <section class="row mb-4">
+        <section class="row mb-4 container-fluid">
             <div class="col-md-3">
                 <b class="text-primary fw-bold sm">Support</b>
                 <header class="intro h3 mb-4">
@@ -356,53 +316,44 @@
                 </p>
             </div>
             <div class="col-md-9">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion" id="accordionPanelsStayOpen">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
-                                Accordion Item #1
+                                How many participants can join a ClearLink video conference?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants.
+                                Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
-                                Accordion Item #2
+                                Can I use ClearLink on multiple devices?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                Answer here
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
-                                Accordion Item #3
+                                Is ClearLink compatible with other video conferencing platforms?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse mb-4"
@@ -421,7 +372,7 @@
             </div>
         </section>
 
-        <section class="row mb-4 mt-4">
+        <section class="row mb-4 mt-4 container-fluid">
             <div class="col-md-5 mb-4">
                 <h3>Ready to clear the path to perfect communication?</h3>
                 <ul class="mb-3">
@@ -438,7 +389,7 @@
             </div>
         </section>
 
-        <section class="row">
+        <section class="row container-fluid">
             <div class="col-md-3">
                 <a href="#" class="text-decoration-none text-dark">
                     <img src="./assets/images/logo.svg" alt="Logo" />
@@ -451,48 +402,49 @@
 
 
             <div class="col">
-                <ul>
+                <ul class="list-unstyled">
                     <p>Product</p>
-                    <li>Overview</li>
-                    <li>features</li>
-                    <li>Solution</li>
-                    <li>Tutorials</li>
-                    <li>Pricing</li>
+                    <li class="text-muted">Overview</li>
+                    <li class="text-muted">Features</li>
+                    <li class="text-muted">Solution</li>
+                    <li class="text-muted">Tutorials</li>
+                    <li class="text-muted">Pricing</li>
                 </ul>
             </div>
+            
             <div class="col">
-                <ul>
+                <ul class="list-unstyled">
                     <p>Company</p>
-                    <li>About us</li>
-                    <li>Careers</li>
-                    <li>Press</li>
-                    <li>News</li>
-                    <li>Contact</li>
+                    <li class="text-muted">About us</li>
+                    <li class="text-muted">Careers</li>
+                    <li class="text-muted">Press</li>
+                    <li class="text-muted">News</li>
+                    <li class="text-muted">Contact</li>
                 </ul>
-
             </div>
+            
             <div class="col">
-                <ul>
+                <ul class="list-unstyled">
                     <p>Resources</p>
-                    <li>Blog</li>
-                    <li>Events</li>
-                    <li>Help center</li>
-                    <li>Tutorials</li>
-                    <li>Support</li>
-
+                    <li class="text-muted">Blog</li>
+                    <li class="text-muted">Events</li>
+                    <li class="text-muted">Help center</li>
+                    <li class="text-muted">Tutorials</li>
+                    <li class="text-muted">Support</li>
                 </ul>
             </div>
+            
             <div class="col">
-                <ul>
+                <ul class="list-unstyled">
                     <p>Legal</p>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                    <li>Cookies</li>
-                    <li>Licenses</li>
-                    <li>Contact</li>
-
+                    <li class="text-muted">Terms</li>
+                    <li class="text-muted">Privacy</li>
+                    <li class="text-muted">Cookies</li>
+                    <li class="text-muted">Licenses</li>
+                    <li class="text-muted">Contact</li>
                 </ul>
             </div>
+            
             <div class="col">
                 <p class="fw-bold text-primary">Get the app</p>
                 <div class="mb-3">
@@ -508,19 +460,18 @@
             </div>
 
         </section>
-        <footer class="pt-3 mt-4 text-muted bg-light d-flex align-items-center">
-            <span class="me-auto">© 2023 ClearLink. All rights reserved.</span>
-            <div class="text-end">
-                <img src="./assets/icons/linkedin.svg" width="20" height="20" />
-                <img src="./assets/icons/twitter.svg" width="20" height="20" />
-                <img src="./assets/icons/facebook.svg" width="20" height="20" />
-                <img src="./assets/icons/instagram.svg" width="20" height="20" />
-                <img src="./assets/icons/github.svg" width="20" height="20" />
-                <img src="./assets/icons/youtube.svg" width="20" height="20" />
-            </div>
-        </footer>
-
     </main>
+    <footer class="pt-3 mt-4 text-muted bg-light d-flex align-items-center">
+        <span class="me-auto">© 2023 ClearLink. All rights reserved.</span>
+        <div class="text-end">
+            <img src="./assets/icons/linkedin.svg" width="20" height="20" />
+            <img src="./assets/icons/twitter.svg" width="20" height="20" />
+            <img src="./assets/icons/facebook.svg" width="20" height="20" />
+            <img src="./assets/icons/instagram.svg" width="20" height="20" />
+            <img src="./assets/icons/github.svg" width="20" height="20" />
+            <img src="./assets/icons/youtube.svg" width="20" height="20" />
+        </div>
+    </footer>    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

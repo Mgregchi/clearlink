@@ -44,10 +44,13 @@
         <symbol id="yellowStar" viewBox="0 0 24 24">
           <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
         </symbol>
-            <symbol id="blueLeftArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
-              <path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
-            </symbol>
-          
+        <!-- <symbol id="blueLeftArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
+            <path d="M13.41 16.58L8.83 12l4.58-4.59L12 6l-6 6 6 6z"/>
+          </symbol>           -->
+          <symbol id="blueLeftArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
+            <path d="M15.41 7.41L14 6L8 12l6 6 1.41-1.41L11.83 12l3.58-3.59z"/>
+          </symbol>
+                    
             <symbol id="blueRightArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
               <path d="M10 6L15.59 11H4v2h11.59L10 18l1.41 1.41L18.83 12 11.4 4.57 10 6z"/>
             </symbol>
@@ -106,8 +109,8 @@
                         </li>                        
                     </ul>
                     <div class="ms-auto">
-                        <a href="#" class="btn btn-outline-secondary rounded-1">Talk to sales</a>
-                        <button type="button" class="btn btn-primary rounded-1">Sign up for free</button>
+                        <a href="#" class="btn btn-outline-secondary rounded-1" aria-label="Talk to sales" title="Talk to sales">Talk to sales</a>
+                        <button type="button" class="btn btn-primary rounded-1" aria-label="Sign up for free" title="Sign up for free">Sign up for free</button>
                     </div>                    
                 </div>
 
@@ -132,31 +135,32 @@
                         <img src="./assets/icons/robot.svg" alt="Discover AI assistant">
                     </span>Discover AI
                         assistant</a>
-                    <div class="row mt-4" id="reviews">
-                        <div class="col">
-                            <img src="./assets/images/avatar-review-group.png" width="80" />
-                        </div>
-                        <div class="col m-0">
-                            <div id="stars">
-                                <svg width="18" height="18" fill="#FFD700">
-                                    <use xlink:href="#yellowStar" />
-                                </svg>
-                                <svg width="18" height="18" fill="#FFD700">
-                                    <use xlink:href="#yellowStar" />
-                                </svg>
-                                <svg width="18" height="18" fill="#FFD700">
-                                    <use xlink:href="#yellowStar" />
-                                </svg>
-                                <svg width="18" height="18" fill="#FFD700">
-                                    <use xlink:href="#yellowStar" />
-                                </svg>
-                                <svg width="18" height="18" fill="#FFD700">
-                                    <use xlink:href="#yellowStar" />
-                                </svg>
+                        <div class="row mt-4" id="reviews">
+                            <div class="col d-flex align-items-center">
+                                <img src="./assets/images/avatar-review-group.png" width="80">
+                                <div class="ms-2">
+                                    <div id="stars" class="d-flex align-items-center">
+                                        <svg width="18" height="18" fill="#FFD700">
+                                            <use xlink:href="#yellowStar"></use>
+                                        </svg>
+                                        <svg width="18" height="18" fill="#FFD700">
+                                            <use xlink:href="#yellowStar"></use>
+                                        </svg>
+                                        <svg width="18" height="18" fill="#FFD700">
+                                            <use xlink:href="#yellowStar"></use>
+                                        </svg>
+                                        <svg width="18" height="18" fill="#FFD700">
+                                            <use xlink:href="#yellowStar"></use>
+                                        </svg>
+                                        <svg width="18" height="18" fill="#FFD700">
+                                            <use xlink:href="#yellowStar"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0 ms-1">from 3,000+ reviews</p> <!-- Add margin to the left for spacing -->
+                                </div>
                             </div>
-                            <p>from 3,000+ reviews</p>
                         </div>
-                    </div>
+                        
                 </div>
 
 
@@ -220,11 +224,14 @@
                         app offers:
                     </p>
                 </div>
-                <div class="col justify-content-end">
-                    <img src="./assets/images/hand-drawn-arrow.svg" alt="hand-drawn-arrow" class=" justify-self-end" />
+                <div class="col-md-4 justify-content-end">
+                    <img src="./assets/images/hand-drawn-arrow.svg" width="100%" alt="hand-drawn-arrow" class=" justify-self-end" />
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 order-md-first order-md-last">
+                <img src="./assets/images/people.jpg" width="100%" alt="people" />
+            </div>            
+            <div class="col-md-7">
                 <div class="row">
                     <div class="col-md-5">
                         <img src="./assets/icons/zap.svg" width="32" alt="feature-1" />
@@ -252,12 +259,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="./assets/images/people.jpg" width="70%" alt="people" />
-            </div>
+
         </section>
         <section class="bg-light row mb-4 container-fluid">
-            <div class="col-md-5">
+
+            <div class="col-md-4 order-md-first order-md-last">
+                <img src="./assets/images/testimonies.png" width="100%" />
+            </div>            
+            <div class="col-md-7">
                 <img src="./assets/icons/shopify.com.svg" width="70" alt="shopify" />
                 <div class="col m-0 mt-4">
                     <div id="stars">
@@ -294,30 +303,22 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col">
-                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button class="btn" type="button">
-                                                <svg width="18" height="18" fill="#FFD700">
-                                                    <use xlink:href="#blueLeftArrow" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn" type="button">
-                                                <svg width="18" height="18" fill="#FFD700">
-                                                    <use xlink:href="#blueRightArrow" />
-                                                </svg>
-                                            </button>
+                                        <div class=" gap-2 d-md-flex justify-content-md-end">
+                                            <a class="btn btn-circle" type="button">
+                                                <img src="./assets/icons/arrow-left.svg" alt="arrow-left"/>
+                                            </a>
+                                            <a class="btn btn-circle" type="button">
+                                                <img src="./assets/icons/arrow-right.svg" alt="arrow-right"/>
+                                            </a>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <img src="./assets/images/testimonies.png" width="100%" height="80%" />
-            </div>
         </section>
         <section class="row mb-4 container-fluid">
             <div class="col-md-5">
@@ -436,10 +437,10 @@
                     <li class="li-check-circle">Access to all features</li>
                     <li class="li-check-circle">Personalized onboarding</li>
                 </ul>
-                <a href="#" class="btn btn-outline-secondary rounded-1 mb-3">Talk to sales</a>
-                <a href="#" class="btn btn-primary rounded-1 mb-3">Start your free trial</a>
+                <a href="#" class="btn btn-outline-secondary rounded-1 mb-3" aria-label="Talk to sales" title="Talk to sales">Talk to sales</a>
+                <a href="#" class="btn btn-primary rounded-1 mb-3" aria-label="Start your free trial" title="Start your free trial">Start your free trial</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 ms-md-auto mb-4">
                 <img src="./assets/images/team-stand-up.jpg" width="100%" />
             </div>
         </section>
@@ -503,12 +504,12 @@
             <div class="col">
                 <p class="fw-bold text-primary">Get the app</p>
                 <div class="mb-3">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" class="text-decoration-none text-dark" title="Download on playstore">
                         <img src="./assets/icons/applestore.svg" alt="playstore" />
                     </a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" class="text-decoration-none text-dark" title="Download on applestore">
                         <img src="./assets/icons/playstore.svg" alt="appstore" />
                     </a>
                 </div>

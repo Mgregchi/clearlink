@@ -15,7 +15,30 @@
         .rounded-1 {
             border-radius: 1.3rem !important;
         }
+        #companyCarousel {
+            transition: transform 2s ease;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 2s ease;
+        }
+
     </style>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#FFD700">
+        <symbol id="yellowStar" viewBox="0 0 24 24">
+          <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+        </symbol>
+            <symbol id="blueLeftArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
+              <path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+            </symbol>
+          
+            <symbol id="blueRightArrow" viewBox="0 0 24 24" width="24" height="24" fill="#0000FF">
+              <path d="M10 6L15.59 11H4v2h11.59L10 18l1.41 1.41L18.83 12 11.4 4.57 10 6z"/>
+            </symbol>
+          
+      </svg>
+  
 </head>
 
 <body>
@@ -23,7 +46,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-1" aria-label="Eleventh navbar example">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">
-                    <img src="./assets/images/Group.svg" alt="Logo" />
+                    <img src="./assets/images/logo.svg" alt="Logo" />
                     <span class="fw-bold">ClearLink</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,24 +57,38 @@
 
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown"
+                                aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu bg-light" aria-labelledby="dropdown09">
+                                <li><a class="dropdown-item" href="#">ClearLink HD</a></li>
+                                <li><a class="dropdown-item" href="#">ClearLink Sound Jam</a></li>
+                                <li><a class="dropdown-item" href="#">ClearLink Studio</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown"
-                                aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown09">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                aria-expanded="false">Solutions</a>
+                            <ul class="dropdown-menu bg-light" aria-labelledby="dropdown09">
+                                <li><a class="dropdown-item" href="#">ClearLink VR/AR plugins</a></li>
+                                <li><a class="dropdown-item" href="#">ClearLink EchoMatch app</a></li>
+                                <li><a class="dropdown-item" href="#">ClearLink DriveWaver Pro</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown"
+                                aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu bg-light" aria-labelledby="dropdown09">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                <li><a class="dropdown-item" href="#">Help center</a></li>
+                                <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-disabled="true">Pricing</a>
+                        </li>                        
                     </ul>
                     <div class="ms-auto">
                         <a href="#" class="btn btn-outline-secondary rounded-1">Talk to sales</a>
@@ -76,7 +113,9 @@
                 </div>
                 <div class="mb-4">
                     <a href="#" class="rounded-1 btn btn-primary" role="button">Start your free trial</a>
-                    <a href="#" class="rounded-1 btn text-primary fw-bold" role="button"><span></span>Discover AI
+                    <a href="#" class="rounded-1 btn text-primary fw-bold" role="button"><span>
+                        <img src="./assets/icons/robot.svg" alt="Discover AI assistant">
+                    </span>Discover AI
                         assistant</a>
                     <div class="row mt-4" id="reviews">
                         <div class="col">
@@ -88,11 +127,21 @@
                         </div>
                         <div class="col m-0">
                             <div id="stars">
-                                <span>star 1</span>
-                                <span>star 2</span>
-                                <span>star 3</span>
-                                <span>star 4</span>
-                                <span>star 5</span>
+                                <svg width="18" height="18" fill="#FFD700">
+                                    <use xlink:href="#yellowStar" />
+                                </svg>
+                                <svg width="18" height="18" fill="#FFD700">
+                                    <use xlink:href="#yellowStar" />
+                                </svg>
+                                <svg width="18" height="18" fill="#FFD700">
+                                    <use xlink:href="#yellowStar" />
+                                </svg>
+                                <svg width="18" height="18" fill="#FFD700">
+                                    <use xlink:href="#yellowStar" />
+                                </svg>
+                                <svg width="18" height="18" fill="#FFD700">
+                                    <use xlink:href="#yellowStar" />
+                                </svg>
                             </div>
                             <p>from 3,000+ reviews</p>
                         </div>
@@ -111,24 +160,79 @@
             <header class="intro text-muted text-center mb-4">
                 Join 1,500+ companies already video conferencing the ClearLink way
             </header>
+        
+            <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+        
+                    <!-- Large Screens (display four items at a time) -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./assets/icons/shopify.com.svg" class="d-block mx-auto" width="73" alt="Shopify">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/icons/coinbase.svg" class="d-block mx-auto" width="73" alt="Coinbase">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/icons/dropbox.svg" class="d-block mx-auto" width="73" alt="Dropbox">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/icons/intercom.svg" class="d-block mx-auto" width="73" alt="Intercom">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Add additional items for large screens as needed -->
+                        </div>
+                    </div>
+        
+                    <!-- Small Screens (display two items at a time) -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./assets/icons/marvel.svg" class="d-block mx-auto" width="73" alt="Marvel">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/icons/automattic.svg" class="d-block mx-auto" width="73" alt="Automattic">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Add additional items for small screens as needed -->
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="container-fluid p-5">
+            <header class="intro text-muted text-center mb-4">
+                Join 1,500+ companies already video conferencing the ClearLink way
+            </header>
             <div class="row">
                 <div class="col">
-                    <img src="./assets/images/logo-1.png" width="100%" />
+                    <img src="./assets/icons/shopify.com.svg" width="73" />
                 </div>
                 <div class="col">
-                    <img src="./assets/images/logo-2.png" width="100%" />
+                    <img src="./assets/icons/coinbase.svg" width="73" />
                 </div>
                 <div class="col">
-                    <img src="./assets/images/logo-3.png" width="100%" />
+                    <img src="./assets/icons/dropbox.svg" width="73" />
                 </div>
                 <div class="col">
-                    <img src="./assets/images/logo-4.png" width="100%" />
+                    <img src="./assets/icons/intercom.svg" width="73" />
                 </div>
                 <div class="col">
-                    <img src="./assets/images/logo-5.png" width="100%" />
+                    <img src="./assets/icons/marvel.svg" width="73" />
                 </div>
                 <div class="col">
-                    <img src="./assets/images/logo-6.png" width="100%" />
+                    <img src="./assets/icons/automattic.svg" width="73" />
                 </div>
 
             </div>
@@ -155,25 +259,25 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-5">
-                        <img src="./assets/images/feature-1.jpg" width="100%" alt="feature-1" />
+                        <img src="./assets/icons/zap.svg" width="32" alt="feature-1" />
                         <p class="fw-bold">Crystal-clear HD video</p>
                         <p class="text-muted">No more pixelation or blurriness - just stunning, lifelike clarity that
                             brings your team closer in meetings.</p>
                     </div>
                     <div class="col-md-5">
-                        <img src="./assets/images/feature-2.jpg" width="100%" alt="feature-2" />
+                        <img src="./assets/icons/zap-1.svg" width="32" alt="feature-2" />
                         <p class="fw-bold">Noise-canceling audio</p>
                         <p class="text-muted">Say goodbye to distractions with our advanced audio tech for crisp,
                             interruption-free conversations.</p>
                     </div>
                     <div class="col-md-5">
-                        <img src="./assets/images/feature-3.jpg" width="100%" alt="feature-3" />
+                        <img src="./assets/icons/zap-2.svg" width="32" alt="feature-3" />
                         <p class="fw-bold">Scheduling made easy</p>
                         <p class="text-muted">Streamline your agenda with ClearLink's intuitive scheduling. Set up
                             meetings, send invitations, and receive reminders in one place.</p>
                     </div>
                     <div class="col-md-5">
-                        <img src="./assets/images/features-4.jpg" width="100%" alt="feature-4" />
+                        <img src="./assets/icons/zap-3.svg" width="32" alt="feature-4" />
                         <p class="fw-bold">Bank-grade security</p>
                         <p class="text-muted">Your privacy is our priority with bank-grade security protocols
                             safeguarding your meetings and data from unwanted intruders.</p>
@@ -186,17 +290,27 @@
         </section>
         <section class="bg-light row p-5 mb-4">
             <div class="col-md-4">
-                <img src="./assets/images/shopify.jpg" width="100%" alt="shopify" />
-                <div class="col m-0">
+                <img src="./assets/icons/shopify.com.svg" width="70" alt="shopify" />
+                <div class="col m-0 mt-4">
                     <div id="stars">
-                        <span>star 1</span>
-                        <span>star 2</span>
-                        <span>star 3</span>
-                        <span>star 4</span>
-                        <span>star 5</span>
+                        <svg width="18" height="18" fill="#FFD700">
+                            <use xlink:href="#yellowStar" />
+                        </svg>
+                        <svg width="18" height="18" fill="#FFD700">
+                            <use xlink:href="#yellowStar" />
+                        </svg>
+                        <svg width="18" height="18" fill="#FFD700">
+                            <use xlink:href="#yellowStar" />
+                        </svg>
+                        <svg width="18" height="18" fill="#FFD700">
+                            <use xlink:href="#yellowStar" />
+                        </svg>
+                        <svg width="18" height="18" fill="#FFD700">
+                            <use xlink:href="#yellowStar" />
+                        </svg>
                     </div>
                 </div>
-                <div>
+                <div class="mt-4">
                     <p class="h5">“ClearLink has upgraded our remote meetings. High-quality video, screen
                         sharing, and top-notch security make it essential for our team.”</p>
                     <div class="row">
@@ -208,8 +322,18 @@
                         </div>
                         <div class="col">
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary me-md-2" type="button">Left</button>
-                                <button class="btn btn-primary" type="button">Right</button>
+                                <button class="btn" type="button">
+                                    <svg width="18" height="18" fill="#FFD700">
+
+                                    <use xlink:href="#blueLeftArrow" />
+                                    </svg>
+                                </button>
+                                <button class="btn" type="button">
+                                    <svg width="18" height="18" fill="#FFD700">
+                                        <use xlink:href="#blueRightArrow" />
+
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -317,7 +441,7 @@
         <section class="row">
             <div class="col-md-3">
                 <a href="#" class="text-decoration-none text-dark">
-                    <img src="./assets/images/Group.svg" alt="Logo" />
+                    <img src="./assets/images/logo.svg" alt="Logo" />
                     <span class="fw-bold">ClearLink</span>
 
                 </a>

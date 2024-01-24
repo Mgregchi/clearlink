@@ -53,6 +53,34 @@
         .accordion-button {
             box-shadow: none!important;
         }
+        .accordion-button::after {
+            background-image: url('./assets/icons/plus.svg');
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: url('./assets/icons/minus.svg');
+            transform: none;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
+        }
+        .accordion-item {
+            border: 1px solid #ccc;
+            border-top: none;
+            transition: background-color 0.3s;
+        }
+
+        /* .accordion-item:not(:first-of-type) {
+            border-top: 1px solid #ccc;
+        } */
+
+        .accordion-item:not(.show) {
+            border: none;
+            background-color: white;
+        }
+
+        .accordion-item.show {
+            background-color: #f8f9fa;
+        }
     </style>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#FFD700">
         <symbol id="yellowStar" viewBox="0 0 24 24">
@@ -242,7 +270,7 @@
                     <img src="./assets/images/hand-drawn-arrow.svg" width="100%" alt="hand-drawn-arrow" class=" justify-self-end" />
                 </div>
             </div>
-            <div class="col-md-4 order-md-first order-md-last">
+            <div class="col-md-4 order-md-first order-md-last mb-3">
                 <img src="./assets/images/people.jpg" width="100%" alt="people" />
             </div>            
             <div class="col-md-7">
@@ -421,22 +449,21 @@
                         </div>
                     </div>
                     </div>
-                <div class="row mt-2">
-                    <div class="col">
-                      <div class=" gap-2 d-md-flex justify-content-md-end">
-                        <a class="btn btn-circle" href="#personsCarousel" type="button" data-bs-slide="prev">
-                            <img src="./assets/icons/arrow-left.svg" alt="arrow-left"/>
-                        </a>
-                        <a class="btn btn-circle" href="#personsCarousel" type="button" data-bs-slide="next">
-                          <img src="./assets/icons/arrow-right.svg" alt="arrow-right"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>                
+
+                    <div class="text-center">
+                    <a href="#personsCarousel" type="button" data-bs-slide="prev">
+                        <span class="visually-hidden">Previous</span>
+                        <img src="./assets/icons/arrow-left.svg" alt="arrow-left"/>
+                    </a>
+                    <a href="#personsCarousel" type="button" data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>                            
+                        <img src="./assets/icons/arrow-right.svg" alt="arrow-right"/>
+                    </a>
+                    </div>              
             </div>
 
         </section>
-        <section class="row mb-4 container-fluid">
+        <section class="row mb-4 container-fluid mb-4">
             <div class="col-md-5">
                 <b class="text-primary fw-bold sm">Support</b>
                 <header class="intro h3 mb-4">
@@ -447,11 +474,11 @@
                     <a href="#" class="text-muted">Please chat to our friendly team</a>
                 </p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 mb-4">
                 <div class="accordion" id="accordionPanelsStayOpen">
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header underline-0 " id="panelsStayOpen-headingOne">
-                            <button class="accordion-button fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
                                 How many participants can join a ClearLink video conference?
@@ -467,7 +494,7 @@
                     </div>
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark collapsed fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
                                 Can I use ClearLink on multiple devices?
@@ -482,7 +509,7 @@
                     </div>
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark collapsed fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
                                 Is ClearLink compatible with other video conferencing platforms?
@@ -497,7 +524,7 @@
                     </div>
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingFour">
-                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark collapsed fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseFour">
                                 How does ClearLink ensure the security of my video conferences?
@@ -512,7 +539,7 @@
                     </div>
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingFive">
-                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark collapsed fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseFive">
                                 Do I need to download any software to use ClearLink?
@@ -527,7 +554,7 @@
                     </div>
                     <div class="accordion-item bg-light mb-3 rounded-1">
                         <h2 class="accordion-header fw-bold" id="panelsStayOpen-headingSix">
-                            <button class="accordion-button collapsed fw-bold bg-light  m-0 rounded-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button text-dark collapsed fw-bold m-0 rounded-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseSix">
                                 What kind of customer support does ClearLink provide?
@@ -543,7 +570,7 @@
                 </div>
             </div>
         </section>
-
+        <br>
         <section class="row mb-4 mt-4 container-fluid">
             <div class="col-md-6 mb-4">
                 <h3 class="mb-4">Ready to clear the path to perfect communication?</h3>
